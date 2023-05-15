@@ -100,7 +100,7 @@ void insertion_sort(int* vetor, int tamanho){
 
 
 int main(){
-    int size = 1000000;
+    int size = 10000000;
     int vector[1000000];
     
     srand(time(NULL));
@@ -113,8 +113,8 @@ int main(){
     clock_t end = clock();
     double t1 = (double)(end - begin) / CLOCKS_PER_SEC;
     heapsort(vector, size);
-    print_heap(vector, size);
     printf("\n%f", t1);
+
     clock_t begin2 = clock();
     insertion_sort(vector, size);
     clock_t end2 = clock();

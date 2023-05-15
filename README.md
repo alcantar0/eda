@@ -6,3 +6,8 @@ clock_t begin = clock();
 clock_t end = clock();
 double t1 = (double)(end - begin) / CLOCKS_PER_SEC;
 ```
+
+```c
+//y é uma string (char*) e _atoi_ converte y em int.
+int x = atoi(y);
+```
